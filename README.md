@@ -1,6 +1,6 @@
 # AI-Chat-Summarizer
 
-This repo contains the implementation of an LLM based chat summarizer. The open-source Google FLAN-T5 LLM which is a Seq2Seq model was picked for fine-tuning and inference.
+This repo contains the implementation of an LLM based chat summarizer. The open-source Google FLAN-T5 LLM which is a Seq2Seq model was picked for fine-tuning and inference. The model was fine-tuned using a single T4 GPU instance.
 
 **Dataset:** The LLM model specifically fine-tunes on the DialogSum dataset which contains 10k+ conversations with the ground-truth summary annotated by a human linguist.
 
