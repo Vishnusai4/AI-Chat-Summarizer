@@ -6,6 +6,13 @@ This repo contains the implementation of an LLM based chat summarizer. The open-
 
 **Tokenizer:** Converts natural language to tokens. The pre-trained tokenizer of the FLAN-T5 model is used here.
 
+**GenAI configs:** 
+1. Precision: [BFLOAT 16](https://cloud.google.com/blog/products/ai-machine-learning/bfloat16-the-secret-to-high-performance-on-cloud-tpus). Known for better stability than the half preicision fp16.
+2. Max new tokens: 50. This is the max number of tokens in the completion of the LLM.
+3. Input token limits: 512
+4. Rank for PEFT LORA: 32.
+
+
 **Input to the model:** In-context prompts giving clear instructions to the model to summarize a given conversation. Strategies tried:
 1. Zero-shot inferencing: The LLM is asked to summarize a given chat conversation directly.
 2. One-shot inferencing: The LLM is given one example of chat conversation-summary to learn before asking it to summarize the test conversation.
