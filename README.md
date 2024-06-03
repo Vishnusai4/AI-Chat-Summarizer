@@ -4,7 +4,7 @@ This repo contains the implementation of an LLM based chat summarizer. The open-
 
 **Dataset:** The LLM model specifically fine-tunes on the DialogSum dataset which contains 10k+ conversations with the ground-truth summary annotated by a human linguist.
 
-**Tokenizer:** 
+**Tokenizer:** Converts natural language to tokens. The pre-trained tokenizer of the FLAN-T5 model is used here.
 
 **Input to the model:** In-context prompts giving clear instructions to the model to summarize a given conversation. Strategies tried:
 1. Zero-shot inferencing: The LLM is asked to summarize a given chat conversation directly.
